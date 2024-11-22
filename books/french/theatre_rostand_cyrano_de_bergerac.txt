@@ -1,5 +1,5 @@
  
-Représentée à Paris, sur le Théâtre de la Porte-Saint-Martin le 28 décembre 1897
+Représentée à Paris,sur le Théâtre de la Porte-Saint-Martinle 28 décembre 1897
 
 C’est à l’âme de CYRANO que je voulais dédier ce poème.
  
@@ -7,7 +7,7 @@ Mais puisqu’elle a passé en vous, COQUELIN, c’est à vous que je le dédie.
  
 E. R.
  
-LES PERSONNAGES  
+LES PERSONNAGES
 CYRANO DE BERGERAC
 CHRISTIAN DE NEUVILLETTE
 COMTE DE GUICHE
@@ -57,7 +57,7 @@ La foule, bourgeois, marquis, mousquetaires, tire-laine, pâtissiers, poètes, c
  
 (Les quatre premiers actes en 1640, le cinquième en 1655.)
  
-PREMIER ACTE  UNE REPRÉSENTATION À L’HÔTEL DE BOURGOGNE.  
+PREMIER ACTEUNE REPRÉSENTATION À L’HÔTEL DE BOURGOGNE.
 La salle de l’Hôtel de Bourgogne, en 1640. Sorte de hangar de jeu de paume aménagé et embelli pour des représentations.
  
 La salle est un carré long ; on la voit en biais, de sorte qu’un de ses côtés forme le fond qui part du premier plan, à droite, et va au dernier plan, à gauche, faire angle avec la scène, qu’on aperçoit en pan coupé.
@@ -69,7 +69,7 @@ Deux rangs superposés de galeries latérales : le rang supérieur est divisé 
 Au fond, au milieu, sous la galerie de loges, l’entrée du théâtre. Grande porte qui s’entre-bâille pour laisser passer les spectateurs. Sur les battants de cette porte, ainsi que dans plusieurs coins et au-dessus du buffet, des affiches rouges sur lesquelles on lit : La Clorise.
  
 Au lever du rideau, la salle est dans une demi-obscurité, vide encore. Les lustres sont baissés au milieu du parterre, attendant d’être allumés.
-Scène I  
+Scène I
 Le public, qui arrive peu à peu. Cavaliers, bourgeois, laquais, pages, tire-laine, le portier, etc., puis les marquis, Cuigy, Brissaille, la distributrice, les violons, etc.
  
 (On entend derrière la porte un tumulte de voix, puis un cavalier entre brusquement.)
@@ -359,7 +359,7 @@ Ah !…
  
 (On se groupe autour des lustres qu’il allume. Quelques personnes ont pris place aux galeries. Lignière entre au parterre, donnant le bras à Christian de Neuvillette. Lignière, un peu débraillé, figure d’ivrogne distingué. Christian, vêtu élégamment, mais d’une façon un peu démodée, paraît préoccupé et regarde les loges.)
  
-Scène II  
+Scène II
 Les mêmes, Christian, Lignière, puis Ragueneau et Le Bret.
  
 CUIGY.
@@ -901,7 +901,7 @@ LA SALLE.
  
 Commencez ! Commencez !
  
-Scène III  
+Scène III
 Les mêmes, moins Lignière ; De Guiche, Valvert, puis Montfleury.
  
 UN MARQUIS, voyant de Guiche, qui descend de la loge de Roxane, traverse le parterre, entouré de seigneurs obséquieux, parmi lesquels le vicomte de Valvert.
@@ -1210,7 +1210,7 @@ Ah ! je vais me fâcher !…
  
 (Sensation à sa vue.)
  
-Scène IV  
+Scène IV
 Les mêmes, Cyrano, puis Bellerose, Jodelet.
  
 MONTFLEURY, aux marquis.
@@ -2297,7 +2297,7 @@ Bonsoir.
  
 (Elle sort.)
  
-Scène V  
+Scène V
 Cyrano, Le Bret, puis le portier.
  
 CYRANO, à Le Bret.
@@ -2582,7 +2582,7 @@ CYRANO, voyant la duègne.
  
 Ah ! mon Dieu ! Sa duègne !
  
-Scène VI  
+Scène VI
 Cyrano, Le Bret, la duègne.
  
 LA DUÈGNE, avec un grand salut.
@@ -2662,7 +2662,7 @@ J’y serai.
  
 (La duègne sort.)
  
-Scène VII  
+Scène VII
 Cyrano, Le Bret, puis les comédiens, les comédiennes, Cuigy, Brissaille, Lignière, le portier, les violons.
  
 CYRANO, tombant dans les bras de Le Bret.
@@ -2890,7 +2890,7 @@ C’est parce qu’on savait qu’il est de mes amis !
  
 RIDEAU.
  
-DEUXIÈME ACTE  LA RÔTISSERIE DES POÈTES.  
+DEUXIÈME ACTELA RÔTISSERIE DES POÈTES.
 La boutique de Ragueneau, rôtisseur-pâtissier, vaste ouvroir au coin de la rue Saint-Honoré et de la rue de l’Arbre-Sec qu’on aperçoit largement au fond, par le vitrage de la porte, grises dans les premières lueurs de l’aube.
  
 À gauche, premier plan, comptoir surmonté d’un dais en fer forgé, auquel sont accrochés des oies, des canards, des paons blancs. Dans de grands vases de faïence de hauts bouquets de fleurs naïves, principalement des tournesols jaunes. Du même côté, second plan, immense cheminée devant laquelle, entre de monstrueux chenets, dont chacun supporte une petite marmite, les rôtis pleurent dans les lèchefrites.
@@ -2902,7 +2902,7 @@ Au milieu de la rôtisserie, un cercle en fer que l’on peut faire descendre av
 Les fours, dans l’ombre, sous l’escalier, rougeoient. Des cuivres étincellent. Des broches tournent. Des pièces montées pyramident, des jambons pendent. C’est le coup de feu matinal. Bousculade de marmitons effarés, d’énormes cuisiniers et de minuscules gâte-sauces. Foisonnement de bonnets à plume de poulet ou à aile de pintade. On apporte, sur des plaques de tôle et des clayons d’osier, des quinconces de brioches, des villages de petits-fours.
  
 Des tables sont couvertes de gâteaux et de plats. D’autres, entourées de chaises, attendent les mangeurs et les buveurs. Une plus petite, dans un coin, disparaît sous les papiers. Ragueneau y est assis au lever du rideau ; il écrit.
-Scène I  
+Scène I
 Ragueneau, pâtissiers, puis Lise ; Ragueneau, à la petite table, écrivant d’un air inspiré, et comptant sur ses doigts.
  
 PREMIER PÂTISSIER, apportant une pièce montée.
@@ -3059,7 +3059,7 @@ RAGUENEAU.
  
 Que faites-vous, alors, madame, avec la prose ?
  
-Scène II  
+Scène II
 Les mêmes, deux enfants, qui viennent d’entrer dans la pâtisserie.
  
 RAGUENEAU.
@@ -3132,7 +3132,7 @@ Au lieu de trois pâtés je vous en donne six.
  
 (Cyrano entre brusquement.)
  
-Scène III  
+Scène III
 Ragueneau, Lise, Cyrano, puis le mousquetaire.
  
 CYRANO.
@@ -3314,7 +3314,7 @@ Je n’ai tout simplement qu’à la recopier.
  
 (Il écrit. – Derrière le vitrage de la porte on voit s’agiter des silhouettes maigres et hésitantes.)
  
-Scène IV  
+Scène IV
 Ragueneau, Lise, le mousquetaire, Cyrano, à la petite table, écrivant, les poètes, vêtus de noir, les bas tombants, couverts de boue.
  
 LISE, entrant, à Ragueneau.
@@ -3604,7 +3604,7 @@ Emportons-les !
  
 (Ils sortent tous derrière Ragueneau, processionnellement, et après avoir fait une râfle de plateaux.)
  
-Scène V  
+Scène V
 Cyrano, Roxane, la duègne.
  
 CYRANO.
@@ -3682,7 +3682,7 @@ Et ne revenez qu’après avoir fini !
  
 (Il referme la porte, redescend vers Roxane, et s’arrête, découvert, à une distance respectueuse.)
  
-Scène VI  
+Scène VI
 Cyrano, Roxane, la duègne, un instant.
  
 CYRANO.
@@ -4085,7 +4085,7 @@ Oh ! j’ai fait mieux depuis.
  
 (Elle sort. Cyrano reste immobile, les yeux à terre. Un silence. La porte de droite s’ouvre. Ragueneau passe sa tête.)
  
-Scène VII  
+Scène VII
 Cyrano, Ragueneau, les poètes, Carbon de Castel-Jaloux, les cadets, la foule, etc., puis De Guiche.
  
 RAGUENEAU.
@@ -4609,7 +4609,7 @@ Ou bien dans les étoiles !
  
 (De Guiche sort. On le voit remonter en chaise. Les seigneurs s’éloignent en chuchotant. Le Bret les réaccompagne. La foule sort.)
  
-Scène VIII  
+Scène VIII
 Cyrano, Le Bret, les cadets, qui se sont attablés à droite et à gauche et auxquels on sert à boire et à manger.
  
 CYRANO, saluant d’un air goguenard ceux qui sortent sans oser le saluer.
@@ -4752,7 +4752,7 @@ Tais-toi !
  
 (Depuis un moment, Christian est entré, s’est mêlé aux cadets ; ceux-ci ne lui adressent pas la parole ; il a fini par s’asseoir seul à une petite table, où Lise le sert.)
  
-Scène IX  
+Scène IX
 Cyrano, Le Bret, les cadets, Christian de Neuvillette.
  
 UN CADET, assis à une table du fond, le verre en main.
@@ -5065,7 +5065,7 @@ Quelque chose d’épouvantable !
  
 (Ils sont tous sortis, – soit par le fond, soit par les côtés, – quelques-uns ont disparu par l’escalier. Cyrano et Christian restent face à face, et se regardent un moment.)
  
-Scène X  
+Scène X
 Cyrano, Christian.
  
 CYRANO.
@@ -5374,7 +5374,7 @@ Ah ! mon ami !
  
 (Il se jette dans les bras de Cyrano. Ils restent embrassés.)
  
-Scène XI  
+Scène XI
 Cyrano, Christian, les Gascons, le mousquetaire, Lise.
  
 UN CADET, entr’ouvrant la porte.
@@ -5431,7 +5431,7 @@ La giroflée !
  
 RIDEAU.
  
-TROISIÈME ACTE  LE BAISER DE ROXANE.  
+TROISIÈME ACTELE BAISER DE ROXANE.
 Une petite place dans l’ancien Marais. Vieilles maisons. Perspectives de ruelles. À droite, la maison de Roxane et le mur de son jardin que débordent de larges feuillages. Au-dessus de la porte, fenêtre et balcon. Un banc devant le seuil.
  
 Du lierre grimpe au mur, du jasmin enguirlande le balcon, frissonne et retombe.
@@ -5443,7 +5443,7 @@ En face, une ancienne maison de même style, brique et pierre, avec une porte d�
 Au lever du rideau, la duègne est assise sur le banc. La fenêtre est grande ouverte sur le balcon de Roxane.
  
 Près de la duègne se tient debout Ragueneau, vêtu d’une sorte de livrée : il termine un récit, en s’essuyant les yeux.
-Scène I  
+Scène I
 Ragueneau, la duègne, puis Roxane, Cyrano, et deux pages.
  
 RAGUENEAU.
@@ -5726,7 +5726,7 @@ Bien ! bien ! bien !
  
 (De Guiche paraît.)
  
-Scène II  
+Scène II
 Roxane, De Guiche, la duègne, à l’écart.
  
 ROXANE, à De Guiche, lui faisant une révérence.
@@ -6040,7 +6040,7 @@ Cyrano m’en voudrait de lui voler sa guerre !
  
 Cousin !
  
-Scène III  
+Scène III
 Roxane, la duègne, Cyrano.
  
 ROXANE.
@@ -6155,7 +6155,7 @@ CYRANO, appelant.
  
 Christian !
  
-Scène IV  
+Scène IV
 Cyrano, Christian.
  
 CYRANO.
@@ -6212,7 +6212,7 @@ Parlez tout seul, Monsieur.
  
 (Il disparaît derrière le mur du jardin.)
  
-Scène V  
+Scène V
 Christian, Roxane, quelques précieux et précieuses, et la duègne, un instant.
  
 ROXANE, sortant de la maison de Clomire avec une compagnie qu’elle quitte : révérences et saluts.
@@ -6371,7 +6371,7 @@ CYRANO, qui depuis un moment est rentré sans être vu.
  
 C’est un succès.
  
-Scène VI  
+Scène VI
 Christian, Cyrano, les pages, un instant.
  
 CHRISTIAN.
@@ -6479,7 +6479,7 @@ CYRANO, ramassant des cailloux qu’il jette dans les vitres.
  
 Attends ! Quelques cailloux.
  
-Scène VII  
+Scène VII
 Roxane, Christian, Cyrano, d’abord caché sous le balcon.
  
 ROXANE, entr’ouvrant sa fenêtre.
@@ -6894,7 +6894,7 @@ Est-ce un homme ? Une femme ? – Ah ! c’est un capucin !
  
 (Entre un capucin qui va de maison en maison, une lanterne à la main, regardant les portes.)
  
-Scène VIII  
+Scène VIII
 Cyrano, Christian, un capucin.
  
 CYRANO, au capucin.
@@ -6935,7 +6935,7 @@ Bonne chance ! Mes vœux suivent votre cuculle !
  
 (Il redescend vers Christian.)
  
-Scène IX  
+Scène IX
 Cyrano, Christian.
  
 CHRISTIAN.
@@ -6963,7 +6963,7 @@ J’aime mieux que ce soit à cause de…
  
 (Bruit des volets qui se rouvrent, Christian se cache sous le balcon.)
  
-Scène X  
+Scène X
 Cyrano, Christian, Roxane.
  
 ROXANE, s’avançant sur le balcon.
@@ -7121,7 +7121,7 @@ Oh ! encor !
  
 (Il suit Roxane.)
  
-Scène XI  
+Scène XI
 Cyrano, Christian, Roxane, le capucin, Ragueneau.
  
 LE CAPUCIN.
@@ -7288,7 +7288,7 @@ Viens !…
  
 (Ils entrent.)
  
-Scène XII  
+Scène XII
 Cyrano, seul.
  
 CYRANO.
@@ -7316,7 +7316,7 @@ Non, ce n’est pas trop haut !…
  
 Je vais légèrement troubler cette atmosphère !…
  
-Scène XIII  
+Scène XIII
 Cyrano, De Guiche.
  
 DE GUICHE, qui entre, masqué, tâtonnant dans la nuit.
@@ -7746,7 +7746,7 @@ Qui cela ?
  
 Ciel !
  
-Scène XIV  
+Scène XIV
 Les mêmes, Roxane, Christian, le capucin, Ragueneau, laquais, la duègne.
  
 DE GUICHE, à Roxane.
@@ -7898,7 +7898,7 @@ CYRANO, s’arrêtant.
  
 RIDEAU.
  
-QUATRIÈME ACTE  LES CADETS DE GASCOGNE.  
+QUATRIÈME ACTELES CADETS DE GASCOGNE.
 Le poste qu’occupe la compagnie de Carbon de Castel-Jaloux au siège d’Arras.
  
 Au fond, talus traversant toute la scène. Au delà s’aperçoit un horizon de plaine : le pays couvert de travaux de siège. Les murs d’Arras et la silhouette de ses toits sur le ciel, très loin.
@@ -7906,7 +7906,7 @@ Au fond, talus traversant toute la scène. Au delà s’aperçoit un horizon de 
 Tentes ; armes éparses ; tambours, etc. – Le jour va se lever. Jaune Orient. – Sentinelles espacées. Feux.
  
 Roulés dans leurs manteaux, les Cadets de Gascogne dorment. Carbon de Castel-Jaloux et Le Bret veillent. Ils sont très pâles et très maigris. Christian dort, parmi les autres, dans sa cape, au premier plan, le visage éclairé par un feu. Silence.
-Scène I  
+Scène I
 Christian, Carbon de Castel-Jaloux, Le Bret, les cadets, puis Cyrano.
  
 LE BRET.
@@ -8083,7 +8083,7 @@ J’en vais écrire une autre.
  
 (Il soulève la toile et disparaît.)
  
-Scène II  
+Scène II
 Les mêmes, moins Cyrano.
  
 (Le jour s’est un peu levé. Lueurs roses. La ville d’Arras se dore à l’horizon. On entend un coup de canon immédiatement suivi d’une batterie de tambours, très au loin, vers la gauche. D’autres tambours battent plus près. Les batteries vont se répondant, et se rapprochant, éclatent presque en scène et s’éloignent vers la droite, parcourant le camp. Rumeurs de réveil. Voix lointaines d’officiers.)
@@ -8194,7 +8194,7 @@ Au secours, Cyrano !
  
 (Il fait maintenant tout à fait jour.)
  
-Scène III  
+Scène III
 Les mêmes, Cyrano.
  
 CYRANO, sortant de sa tente, tranquille, une plume à l’oreille, un livre à la main.
@@ -8456,7 +8456,7 @@ Et moi, je lis Descartes.
  
 (Il se promène de long en large et lit dans un petit livre qu’il a tiré de sa poche. – Tableau. – De Guiche entre. Tout le monde a l’air absorbé et content. Il est très pâle. Il va vers Carbon.)
  
-Scène IV  
+Scène IV
 Les mêmes, de Guiche.
  
 DE GUICHE, à Carbon.
@@ -8854,7 +8854,7 @@ Bonjour !
  
 (Le son d’une voix de femme relève d’un seul coup tout ce monde profondément incliné. – Stupeur.)
  
-Scène V  
+Scène V
 Les mêmes, Roxane.
  
 DE GUICHE.
@@ -9144,7 +9144,7 @@ Jamais !
  
 (De Guiche sort.)
  
-Scène VI  
+Scène VI
 Les mêmes, moins De Guiche.
  
 CHRISTIAN, suppliant.
@@ -9452,7 +9452,7 @@ Sur ton siège ! – Tout est caché ?…
  
 (En un clin d’œil tout a été repoussé dans les tentes, ou caché sous les vêtements, sous les manteaux, dans les feutres. – De Guiche entre vivement – et s’arrête, tout d’un coup, reniflant. – Silence.)
  
-Scène VII  
+Scène VII
 Les mêmes, De Guiche.
  
 DE GUICHE.
@@ -9761,7 +9761,7 @@ Tais-toi ! Pas devant elle !
  
 (Il rentre vivement dans sa tente.)
  
-Scène VIII  
+Scène VIII
 Roxane, Christian ; au fond, allées et venues de cadets. Carbon et De Guiche donnent des ordres.
  
 ROXANE, courant à Christian.
@@ -9978,7 +9978,7 @@ Cher Christian !…
  
 (Elle remonte vers les Gascons qui s’empressent respectueusement autour d’elle.)
  
-Scène IX  
+Scène IX
 Christian, Cyrano ; au fond Roxane, causant avec Carbon et quelques cadets.
  
 CHRISTIAN, appelant vers la tente de Cyrano.
@@ -10161,7 +10161,7 @@ Une chose importante…
  
 (Elle va vivement à Cyrano. Christian sort.)
  
-Scène X  
+Scène X
 Roxane, Cyrano, puis Le Bret, Carbon de Castel-Jaloux, les cadets, Ragueneau, de Guiche, etc.
  
 ROXANE.
@@ -10633,7 +10633,7 @@ Ce sont les cadets…
  
 RIDEAU.
  
-CINQUIÈME ACTE  LA GAZETTE DE CYRANO.  
+CINQUIÈME ACTELA GAZETTE DE CYRANO.
 Quinze ans après, en 1655. Le parc du couvent que les Dames de la Croix occupaient à Paris.
  
 Superbes ombrages. À gauche, la maison ; vaste perron sur lequel ouvrent plusieurs portes. Un arbre énorme au milieu de la scène, isolé au milieu d’une petite place ovale. À droite, premier plan, parmi de grands buis, un banc de pierre demi-circulaire.
@@ -10647,7 +10647,7 @@ C’est l’automne. Toute la frondaison est rousse au-dessus des pelouses fraî
 Entre le banc de droite et l’arbre, un grand métier à broder devant lequel une petite chaise a été apportée. Paniers pleins d’écheveaux et de pelotons. Tapisserie commencée.
  
 Au lever du rideau, des sœurs vont et viennent dans le parc ; quelques-unes sont assises sur le banc autour d’une religieuse plus âgée. Des feuilles tombent.
-Scène I  
+Scène I
 Mère Marguerite, sœur Marthe, sœur Claire, les Sœurs.
  
 SŒUR MARTHE, à Mère Marguerite.
@@ -10808,7 +10808,7 @@ Les soins du monde !
  
 (Elles sortent. De Guiche et Roxane descendent en silence et s’arrêtent près du métier. Un temps.)
  
-Scène II  
+Scène II
 Roxane, le duc de Grammont, ancien comte de Guiche, puis Le Bret et Ragueneau.
  
 LE DUC.
@@ -11072,7 +11072,7 @@ Mais, Madame…
  
 (Roxane sort sans l’écouter, avec le duc. Il redescend vers Le Bret.)
  
-Scène III  
+Scène III
 Le Bret, Ragueneau.
  
 RAGUENEAU.
@@ -11156,7 +11156,7 @@ C’est quelque histoire encor de ce bon Ragueneau !
  
 (Elle descend le perron.)
  
-Scène IV  
+Scène IV
 Roxane seule, puis deux Sœurs, un instant.
  
 ROXANE.
@@ -11204,7 +11204,7 @@ UNE SŒUR, paraissant sur le perron.
  
 Monsieur de Bergerac.
  
-Scène V  
+Scène V
 Roxane, Cyrano et, un moment, sœur Marthe.
  
 ROXANE, sans se retourner.
@@ -11707,7 +11707,7 @@ Pourquoi ?…
  
 (Le Bret et Ragueneau entrent en courant.)
  
-Scène VI  
+Scène VI
 Les mêmes, Le Bret et Ragueneau.
  
 LE BRET.
