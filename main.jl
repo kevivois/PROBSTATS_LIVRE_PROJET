@@ -1,6 +1,8 @@
-using DataStructures
+using DataStructures,OrderedCollections
+using Plots
+gr()
 
-book = open("books/flaubert_correspondance_tome_II.txt","r")
+book = open("books/francais/flaubert_correspondance_tome_II.txt","r")
 text_data = readlines(book)
 close(book)
 words = []
@@ -14,7 +16,6 @@ function clean_word(w::String)
 end
             
 
-
 # for w in split(lowercase(replace(line, "’" => " ")), ' ')
 for line in text_data
     replaced_line = lowercase(replace(line, "’" => " ", "'" => " "))
@@ -26,5 +27,15 @@ for line in text_data
     end
 end
 
-c = counter(words)
-println(c)
+word_counter = counter(words)
+sorted_words = sort(collect(word_counter),by=x->-x[2])
+
+log_ranks = [log(rank) for rank in 1:length(sorted_words)]
+log_frequencies = [log(frequence[2]) for frequence in sorted_words]
+
+long_moy_word = sum([length(w) for w in words])/length(words)
+
+println(long_moy_word)
+
+
+
