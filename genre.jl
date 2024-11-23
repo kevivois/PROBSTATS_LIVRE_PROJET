@@ -85,12 +85,11 @@ function calculate_likelihood(words::Vector{String}, keywords::Dict{String, Floa
 end
 
 # calculate the probabilities of each genre given a set of words
-function calculate_genre_probabilities(words::Vector{String}, keywords_by_genre::Dict, genre_priors::Dict)::Dict
+function calculate_genre_probabilities(words::Vector{String}, keywords_by_genre::Dict)::Dict
     probabilities = Dict{String, Float64}()
     for (genre, keywords) in keywords_by_genre
-        prior = genre_priors[genre]
         likelihood = calculate_likelihood(words, keywords)
-        probabilities[genre] = prior * likelihood
+        probabilities[genre] = likelihood
     end
     # check if total probability is zero
     total = sum(values(probabilities))
@@ -107,10 +106,10 @@ end
 
 
 # function to get the probabilities of each genre for a given book
-function get_genre_probabilities(filepath::String, keywords_by_genre::Dict, genre_priors::Dict)::Dict
+function get_genre_probabilities(filepath::String, keywords_by_genre::Dict)
     words = load_book_words(filepath)
     println("Mots extraits du livre : ", words[1:min(10, length(words))])  # Affiche les 10 premiers mots
-    probabilities = calculate_genre_probabilities(words, keywords_by_genre, genre_priors)
+    probabilities = calculate_genre_probabilities(words, keywords_by_genre)
     return probabilities
 end
 
@@ -119,7 +118,7 @@ end
 filepath = "books/french/test.txt"
 
 
-probabilities = get_genre_probabilities(filepath, keywords_by_genre, genre_priors)
+probabilities = get_genre_probabilities(filepath, keywords_by_genre)
 
 # print the probabilities
 println("Probabilités des genres pour le livre :")
@@ -131,5 +130,5 @@ end
 genres = collect(keys(probabilities))  
 probas = [round(prob * 100, digits=2) for prob in values(probabilities)]  
 
-# bar graph
+# bar graph     
 Plots.bar(genres, probas, legend=false, xlabel="Genres", ylabel="Probabilité (%)", title="Probabilités des genres")
