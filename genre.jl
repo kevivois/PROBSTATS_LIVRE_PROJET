@@ -1,9 +1,9 @@
 using Plots
-
+gr()
 # key words pour chaque genre
 keywords_by_genre = Dict(
     "romance" => Dict(
-        "amour" => 0.3, "passion" => 0.2, "cœur" => 0.2, "romantique" => 0.15,
+        "amour" => 0.01, "passion" => 0.2, "cœur" => 0.01, "romantique" => 0.001,
         "désir" => 0.15, "baiser" => 0.1, "tendresse" => 0.1, "romance" => 0.1,
         "sentiment" => 0.1, "flamme" => 0.1, "jalousie" => 0.1, "caresse" => 0.1,
         "fiancé" => 0.1, "mariage" => 0.1, "séduction" => 0.1, "tristesse" => 0.05,
@@ -70,16 +70,15 @@ function load_book_words(filepath::String)::Vector{String}
     book = open(filepath, "r")
     text_data = readlines(book)
     close(book)
-    println("Premières lignes du fichier : ", text_data[1:min(5, length(text_data))])  # Affiche les premières lignes
     return get_words(text_data)
 end
 
 
 # calculate the likelihood of a set of words given a set of keywords
 function calculate_likelihood(words::Vector{String}, keywords::Dict{String, Float64})::Float64
-    likelihood = 1.0
+    likelihood = 0.0  # utiliser une somme au lieu d'un produit
     for word in words
-        likelihood *= get(keywords, word, 1e-6)  # default value is 1e-6 if word not found
+        likelihood += get(keywords, word, 0)
     end
     return likelihood
 end
@@ -90,6 +89,7 @@ function calculate_genre_probabilities(words::Vector{String}, keywords_by_genre:
     for (genre, keywords) in keywords_by_genre
         likelihood = calculate_likelihood(words, keywords)
         probabilities[genre] = likelihood
+        print(probabilities)
     end
     # check if total probability is zero
     total = sum(values(probabilities))
@@ -108,14 +108,13 @@ end
 # function to get the probabilities of each genre for a given book
 function get_genre_probabilities(filepath::String, keywords_by_genre::Dict)
     words = load_book_words(filepath)
-    println("Mots extraits du livre : ", words[1:min(10, length(words))])  # Affiche les 10 premiers mots
     probabilities = calculate_genre_probabilities(words, keywords_by_genre)
     return probabilities
 end
 
 
 # book path
-filepath = "books/french/test.txt"
+filepath = "books/french/roman_romance_kennedy_the_deal.txt"
 
 
 probabilities = get_genre_probabilities(filepath, keywords_by_genre)
@@ -131,4 +130,6 @@ genres = collect(keys(probabilities))
 probas = [round(prob * 100, digits=2) for prob in values(probabilities)]  
 
 # bar graph     
-Plots.bar(genres, probas, legend=false, xlabel="Genres", ylabel="Probabilité (%)", title="Probabilités des genres")
+b = Plots.bar(genres, probas, legend=false, xlabel="Genres", ylabel="Probabilité (%)", title="Probabilités des genres")
+
+display(b)
