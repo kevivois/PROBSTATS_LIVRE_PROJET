@@ -89,7 +89,6 @@ function calculate_genre_probabilities(words::Vector{String}, keywords_by_genre:
     for (genre, keywords) in keywords_by_genre
         likelihood = calculate_likelihood(words, keywords)
         probabilities[genre] = likelihood
-        print(probabilities)
     end
     # check if total probability is zero
     total = sum(values(probabilities))
@@ -114,7 +113,7 @@ end
 
 
 # book path
-filepath = "books/french/roman_romance_kennedy_the_deal.txt"
+filepath = "books/french/flaubert_correspondance_tome_II.txt"
 
 
 probabilities = get_genre_probabilities(filepath, keywords_by_genre)
