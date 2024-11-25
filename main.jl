@@ -133,4 +133,5 @@ sorted_words_frequencies = sort(collect(word_counter),by=x->-x[2])
 log_ranks = [log(rank) for rank in 1:length(sorted_words_frequencies)]
 log_frequencies = [log(frequence[2]) for frequence in sorted_words_frequencies]
 
-Plots.plot(log_ranks, log_frequencies)
+Plots.plot(log_ranks, log_frequencies, label=false, title="loi de Zipf Flaubert",
+    xaxis = "log rank", yaxis = "log frequency")
