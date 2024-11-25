@@ -121,16 +121,16 @@ for l in languages
 end
 
 # Construire la matrice
-create_plot_PCA(book_infos)
+create_plot_PCA_languages(book_infos)
 
-"""
+# Test Zipf
+book_test::IOStream = open("books/french/flaubert_correspondance_tome_II.txt","r")
+text_data_test = readlines(book_test)
+words = get_words(text_data_test)
 word_counter = counter(words)
 sorted_words_frequencies = sort(collect(word_counter),by=x->-x[2])
 
 log_ranks = [log(rank) for rank in 1:length(sorted_words_frequencies)]
 log_frequencies = [log(frequence[2]) for frequence in sorted_words_frequencies]
 
-mean_length_word = sum([length(w) for w in words])/length(words)
-
-println(mean_length_word)
-"""
+Plots.plot(log_ranks, log_frequencies)
