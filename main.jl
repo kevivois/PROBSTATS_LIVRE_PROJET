@@ -83,14 +83,18 @@ end
 
 languages::Vector{String} = ["deutsch", "english", "french"]
 book_infos::Dict = Dict()
+book_ratio_unique_word::Dict = Dict()
 
 mean_length_words_arr = []
 mean_number_words_sentences_arr = []
 letter_frequency_percent_arr = []
+
 for l in languages
     folder_path = "books/$l"
     txt_files = filter(f -> endswith(f, ".txt"), readdir(folder_path))
     book_words::Dict = Dict()
+    book_ratio_unique_word[l] = []
+
     for file in txt_files
         println("$folder_path/$file")
         book::IOStream = open("$folder_path/$file","r")
@@ -100,9 +104,10 @@ for l in languages
         words = get_words(text_data)
         sentences = get_sentences(text_data)
         letter_freq  = letter_frequency(text_data)
+        push!(book_ratio_unique_word[l], Dict(file => length(Set(words)) / length(words)))
+        println(length(Set(words)) / length(words)) # nbre de mot différents / nombre de mots
 
         number_of_letters_tot = sum([length(w) for w in words])
-        
         mean_length_words_book::Float64 = sum([length(w) for w in words])/length(words)
         mean_words_in_sentences::Float64 = sum([length(split(w, " ")) for w in sentences])/length(sentences)
 
@@ -119,6 +124,33 @@ for l in languages
     end
     book_infos[l] = book_words
 end
+
+function display_cool_graphics(book_ratio_unique_word)
+    languages = keys(book_ratio_unique_word)
+    all_ratios = []
+    all_books = []
+    all_colors = []
+
+    color_palette = [:blue, :red, :green, :orange, :purple]
+        
+    for (i, lang) in enumerate(languages)
+        books_ratios = book_ratio_unique_word[lang]
+        for (j, entry) in enumerate(books_ratios)
+            book, ratio = first(entry)
+            push!(all_ratios, ratio)
+            push!(all_books, "$lang: $j")
+            push!(all_colors, color_palette[i])
+        end
+    end
+        
+    b = bar(all_books, all_ratios, color=all_colors, legend=false, 
+        title="Ratio de mots uniques par livre et par langue", 
+        xlabel="Livres", ylabel="Ratio (Mots Uniques / Total Mots)", 
+        xticks=(1:length(all_books), all_books), xrotation=45)
+    display(b)
+end
+
+display_cool_graphics(book_ratio_unique_word)
 
 # Construire la matrice
 create_plot_PCA_languages(book_infos)

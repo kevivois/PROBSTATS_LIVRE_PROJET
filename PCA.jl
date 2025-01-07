@@ -1,5 +1,5 @@
 using Plots
-using MultivariateStats, StatsBase
+using MultivariateStats, StatsBase, LinearAlgebra
 gr()
 
 
@@ -7,6 +7,9 @@ function create_plot_PCA_languages(book_infos)
     matrix_transposed = build_data_matrix(book_infos)'
     matrix_centered_normalized = StatsBase.transform(StatsBase.fit(ZScoreTransform, matrix_transposed; dims=2, center=true, scale=true), matrix_transposed)
     model_matrix = MultivariateStats.fit(PCA, matrix_centered_normalized; maxoutdim=2)
+    # println(LinearAlgebra.eigvals(model_matrix))
+    # println(LinearAlgebra.eigvecs(model_matrix))
+    # println(model_matrix)
 
     matrix_PCA = MultivariateStats.transform(model_matrix, matrix_centered_normalized)
     PCA1_matrix = matrix_PCA[1,:]
@@ -15,7 +18,6 @@ function create_plot_PCA_languages(book_infos)
     b = Plots.scatter(PCA1_matrix, PCA2_matrix, groups=get_categories(book_infos),
         legend=true, title="Affichage des données après PCA", xlabel="PCA 1", ylabel="PCA 2")
     display(b)
-
 end
 
 function get_categories(book_infos)
