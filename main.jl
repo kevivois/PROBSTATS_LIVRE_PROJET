@@ -83,7 +83,7 @@ end
 
 languages::Vector{String} = ["deutsch", "english", "french"]
 book_infos::Dict = Dict()
-book_ratio_unique_word::Dict = Dict()
+book_word_info::Dict = Dict()
 
 mean_length_words_arr = []
 mean_number_words_sentences_arr = []
@@ -93,7 +93,7 @@ for l in languages
     folder_path = "books/$l"
     txt_files = filter(f -> endswith(f, ".txt"), readdir(folder_path))
     book_words::Dict = Dict()
-    book_ratio_unique_word[l] = []
+    book_word_info[l] = []
 
     for file in txt_files
         println("$folder_path/$file")
@@ -104,8 +104,8 @@ for l in languages
         words = get_words(text_data)
         sentences = get_sentences(text_data)
         letter_freq  = letter_frequency(text_data)
-        push!(book_ratio_unique_word[l], Dict(file => length(Set(words)) / length(words)))
-        println(length(Set(words)) / length(words)) # nbre de mot différents / nombre de mots
+        push!(book_word_info[l], Dict(file => Dict("words_num" => length(words), "different_word" => length(Set(words)))))
+        println(length(Set(words))) # nbre de mot différents / nombre de mots
 
         number_of_letters_tot = sum([length(w) for w in words])
         mean_length_words_book::Float64 = sum([length(w) for w in words])/length(words)
@@ -125,32 +125,153 @@ for l in languages
     book_infos[l] = book_words
 end
 
-function display_cool_graphics(book_ratio_unique_word)
-    languages = keys(book_ratio_unique_word)
-    all_ratios = []
-    all_books = []
-    all_colors = []
+function display_graph_with_average(book_word_info)
+    global_books = []
+    global_unique_words = []
+    book_colors = []  # Liste des couleurs pour les livres (chaque couleur pour chaque langue)
+    language_legends = Dict()  # Associe chaque couleur à une langue pour la légende
 
-    color_palette = [:blue, :red, :green, :orange, :purple]
-        
+    # Définir une palette de couleurs pour les barres des livres
+    color_palette = [:yellow, :green, :red, :purple, :orange, :cyan, :magenta, :blue, :brown, :gray]
+
+    # Attribuer une couleur unique à chaque langue pour le graphique global
+    lang_colors = Dict()
+    languages = keys(book_word_info)
+
+    # Assigner une couleur unique à chaque langue
     for (i, lang) in enumerate(languages)
-        books_ratios = book_ratio_unique_word[lang]
-        for (j, entry) in enumerate(books_ratios)
-            book, ratio = first(entry)
-            push!(all_ratios, ratio)
-            push!(all_books, "$lang: $j")
-            push!(all_colors, color_palette[i])
-        end
+        lang_colors[lang] = color_palette[(i-1) % length(color_palette) + 1]
+        language_legends[lang_colors[lang]] = lang  # Associer la couleur à la langue
     end
+
+    for l in keys(book_word_info)
+        # Préparation des données pour chaque langue
+        books = []
+        unique_words = []
         
-    b = bar(all_books, all_ratios, color=all_colors, legend=false, 
-        title="Ratio de mots uniques par livre et par langue", 
-        xlabel="Livres", ylabel="Ratio (Mots Uniques / Total Mots)", 
-        xticks=(1:length(all_books), all_books), xrotation=45)
-    display(b)
+        for book_data in book_word_info[l]
+            for (file, stats) in book_data
+                push!(books, file)  # Nom du livre
+                push!(unique_words, stats["different_word"])  # Nombre de mots différents
+                # Ajouter aux données globales
+                push!(global_books, "[$l] $file")
+                push!(global_unique_words, stats["different_word"])
+                # Ajouter la couleur associée à la langue pour le graphique global
+                push!(book_colors, lang_colors[l])
+            end
+        end
+
+        # Calcul de la moyenne pour chaque langue
+        avg_unique_words = mean(unique_words)
+        
+        # Tracé des données pour chaque langue
+        b = bar(1:length(books), unique_words, label="Unique Words", title="Unique Words per Book ($l)",
+            xlabel="Books - $l", ylabel="Number of Unique Words", legend=:top, color=lang_colors[l])
+
+        plot!(1:length(books), fill(avg_unique_words, length(books)), label="Average", color=:black, lw=2)
+        
+        # Affiche le graphique pour chaque langue
+        display(b)
+    end
+
+    # Graphique global avec des couleurs différentes pour chaque langue
+    if !isempty(global_books)
+        # Calcul de la moyenne globale
+        global_avg_unique_words = mean(global_unique_words)
+
+        # Tracé des données globales avec des couleurs différentes pour chaque langue
+        b_2 = bar(1:length(global_books), global_unique_words, title="Unique Words for All Books", label="",
+                  xlabel="Books", xticks=(1:length(global_books), 1:length(global_books)), ylabel="Number of Unique Words", legend=:topright,
+                  color=book_colors)  # Utilisation de book_colors pour chaque barre selon la langue
+        
+        plot!(1:length(global_books), fill(global_avg_unique_words, length(global_books)), label="Global Average", color=:black, lw=2)
+        
+        # Trier la légende dans l'ordre d'apparition des couleurs sur le graphique
+        ordered_colors = unique(book_colors)  # Ordre d'apparition des couleurs
+        for color in ordered_colors
+            bar!([0], [0], label=language_legends[color], color=color)
+        end
+
+        # Affiche le graphique global
+        display(b_2)
+    end
+end
+function display_graph_with_average_ratio(book_word_info)
+    global_books = []
+    global_unique_words_ratio = []
+    book_colors = []  # Liste des couleurs pour les livres (chaque couleur pour chaque langue)
+    language_legends = Dict()  # Associe chaque couleur à une langue pour la légende
+
+    # Définir une palette de couleurs pour les barres des livres
+    color_palette = [:yellow, :green, :red, :purple, :orange, :cyan, :magenta, :blue, :brown, :gray]
+
+    # Attribuer une couleur unique à chaque langue pour le graphique global
+    lang_colors = Dict()
+    languages = keys(book_word_info)
+
+    # Assigner une couleur unique à chaque langue
+    for (i, lang) in enumerate(languages)
+        lang_colors[lang] = color_palette[(i-1) % length(color_palette) + 1]
+        language_legends[lang_colors[lang]] = lang  # Associer la couleur à la langue
+    end
+
+    for l in keys(book_word_info)
+        # Préparation des données pour chaque langue
+        books = []
+        unique_words_ratio = []
+        
+        for book_data in book_word_info[l]
+            for (file, stats) in book_data
+                push!(books, file)  # Nom du livre
+                push!(unique_words_ratio, stats["different_word"] / stats["words_num"])  # Ratio des mots uniques
+                # Ajouter aux données globales
+                push!(global_books, "[$l] $file")
+                push!(global_unique_words_ratio, stats["different_word"] / stats["words_num"])
+                # Ajouter la couleur associée à la langue pour le graphique global
+                push!(book_colors, lang_colors[l])
+            end
+        end
+
+        # Calcul de la moyenne pour chaque langue
+        avg_unique_words_ratio = mean(unique_words_ratio)
+        
+        # Tracé des données pour chaque langue
+        b = bar(1:length(books), unique_words_ratio, label="Unique Words Ratio", title="Unique Words Ratio per Book ($l)",
+            xlabel="Books - $l", ylabel="Ratio of Unique Words", legend=:top, color=lang_colors[l])
+
+        plot!(1:length(books), fill(avg_unique_words_ratio, length(books)), label="Average", color=:black, lw=2)
+        
+        # Affiche le graphique pour chaque langue
+        display(b)
+    end
+
+    # Graphique global avec des couleurs différentes pour chaque langue
+    if !isempty(global_books)
+        # Calcul de la moyenne globale
+        global_avg_unique_words_ratio = mean(global_unique_words_ratio)
+
+        # Tracé des données globales avec des couleurs différentes pour chaque langue
+        b_2 = bar(1:length(global_books), global_unique_words_ratio, title="Unique Words Ratio for All Books", label="",
+                  xlabel="Books", xticks=(1:length(global_books), 1:length(global_books)), ylabel="Ratio of Unique Words", legend=:topright,
+                  color=book_colors)  # Utilisation de book_colors pour chaque barre selon la langue
+        
+        plot!(1:length(global_books), fill(global_avg_unique_words_ratio, length(global_books)), label="Global Average", color=:black, lw=2)
+        
+        # Trier la légende dans l'ordre d'apparition des couleurs sur le graphique
+        ordered_colors = unique(book_colors)  # Ordre d'apparition des couleurs
+        for color in ordered_colors
+            bar!([0], [0], label=language_legends[color], color=color)
+        end
+
+        # Affiche le graphique global
+        display(b_2)
+    end
 end
 
-display_cool_graphics(book_ratio_unique_word)
+
+
+display_graph_with_average(book_word_info)
+display_graph_with_average_ratio(book_word_info)
 
 # Construire la matrice
 create_plot_PCA_languages(book_infos)
