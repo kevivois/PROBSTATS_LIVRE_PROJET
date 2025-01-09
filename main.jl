@@ -184,7 +184,7 @@ function display_graph_with_average(book_word_info)
                   xlabel="Livres", xticks=(1:length(global_books), 1:length(global_books)), ylabel="Nombre de mots différents", legend=:topright,
                   color=book_colors)  # Utilisation de book_colors pour chaque barre selon la langue
         
-        plot!(1:length(global_books), fill(global_avg_unique_words, length(global_books)), label="Moyenne gloabale", color=:black, lw=2)
+        plot!(1:length(global_books), fill(global_avg_unique_words, length(global_books)), label="Moyenne globale", color=:black, lw=2)
         
         # Trier la légende dans l'ordre d'apparition des couleurs sur le graphique
         ordered_colors = unique(book_colors)  # Ordre d'apparition des couleurs

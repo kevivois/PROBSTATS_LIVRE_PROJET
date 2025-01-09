@@ -4,12 +4,31 @@ gr()
 
 
 function create_plot_PCA_languages(book_infos)
+    dimension_names = vcat(["mean_length_words", "mean_number_words_sentences"], [string(c) for c in 'a':'z'])
     matrix_transposed = build_data_matrix(book_infos)'
     matrix_centered_normalized = StatsBase.transform(StatsBase.fit(ZScoreTransform, matrix_transposed; dims=2, center=true, scale=true), matrix_transposed)
     model_matrix = MultivariateStats.fit(PCA, matrix_centered_normalized; maxoutdim=2)
-    # println(LinearAlgebra.eigvals(model_matrix))
-    # println(LinearAlgebra.eigvecs(model_matrix))
-    # println(model_matrix)
+    eigenvectors = LinearAlgebra.eigvecs(model_matrix)
+
+    # Calcul des contributions absolues
+    contributions_abs = abs.(eigenvectors)
+
+    # Normalisation pour obtenir les pourcentages
+    contributions_pc1 = contributions_abs[:, 1] ./ sum(contributions_abs[:, 1]) * 100
+    contributions_pc2 = contributions_abs[:, 2] ./ sum(contributions_abs[:, 2]) * 100
+
+    # Affichage des résultats
+    println("Pourcentages de contribution pour PC1 :")
+    for (name, percentage) in zip(dimension_names, contributions_pc1)
+        percentage = round(percentage, digits=2)
+        println("$name : $percentage%")
+    end
+
+    println("\nPourcentages de contribution pour PC2 :")
+    for (name, percentage) in zip(dimension_names, contributions_pc2)
+        percentage = round(percentage, digits=2)
+        println("$name : $percentage%")
+    end
 
     matrix_PCA = MultivariateStats.transform(model_matrix, matrix_centered_normalized)
     PCA1_matrix = matrix_PCA[1,:]
