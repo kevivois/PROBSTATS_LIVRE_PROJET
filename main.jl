@@ -81,7 +81,7 @@ function letter_frequency(text_data::Vector{String})::Dict{Char, Float64}
     return freq_percent
 end
 
-languages::Vector{String} = ["deutsch", "english", "french"]
+languages::Vector{String} = ["allemand", "anglais", "francais"]
 book_infos::Dict = Dict()
 book_word_info::Dict = Dict()
 
@@ -251,11 +251,11 @@ function display_graph_with_average_ratio(book_word_info)
         global_avg_unique_words_ratio = mean(global_unique_words_ratio)
 
         # Tracé des données globales avec des couleurs différentes pour chaque langue
-        b_2 = bar(1:length(global_books), global_unique_words_ratio, title="Unique Words Ratio for All Books", label="",
-                  xlabel="Books", xticks=(1:length(global_books), 1:length(global_books)), ylabel="Ratio of Unique Words", legend=:topright,
+        b_2 = bar(1:length(global_books), global_unique_words_ratio, title="Ratio de mots différents pour les livres", label="",
+                  xlabel="Livres", xticks=(1:length(global_books), 1:length(global_books)), ylabel="Ratio de mots différents", legend=:topright,
                   color=book_colors)  # Utilisation de book_colors pour chaque barre selon la langue
         
-        plot!(1:length(global_books), fill(global_avg_unique_words_ratio, length(global_books)), label="Global Average", color=:black, lw=2)
+        plot!(1:length(global_books), fill(global_avg_unique_words_ratio, length(global_books)), label="Moyenne globale", color=:black, lw=2)
         
         # Trier la légende dans l'ordre d'apparition des couleurs sur le graphique
         ordered_colors = unique(book_colors)  # Ordre d'apparition des couleurs
@@ -277,7 +277,7 @@ display_graph_with_average_ratio(book_word_info)
 create_plot_PCA_languages(book_infos)
 
 # Test Zipf
-book_test::IOStream = open("books/french/flaubert_correspondance_tome_II.txt","r")
+book_test::IOStream = open("books/francais/flaubert_correspondance_tome_II.txt","r")
 text_data_test = readlines(book_test)
 words = get_words(text_data_test)
 word_counter = counter(words)
